@@ -1,0 +1,73 @@
+<div style="max-width:400px;margin:0 auto;border-radius:12px;overflow:hidden;background:#0a0e0a;position:relative;aspect-ratio:4/5;font-family:var(--font-sans);color:#fff;">
+  <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ff4444,#ff8800,#ffcc00);background-size:200% 100%;animation:shimmer 2s linear infinite;"></div>
+  <div style="position:absolute;top:14px;left:0;right:0;text-align:center;">
+    <span style="font-size:10px;letter-spacing:3px;opacity:0.5;text-transform:uppercase;animation:fadeInDown 0.6s ease-out both;">CRASH GAME</span>
+  </div>
+  <div style="position:absolute;top:40px;left:50%;transform:translateX(-50%);width:130px;height:130px;border-radius:50%;background:radial-gradient(circle,#ff4444 0%,#0a0e0a 70%);display:flex;align-items:center;justify-content:center;animation:pulseRing 2s ease-in-out infinite;box-shadow:0 0 30px rgba(255,68,68,0.3);">
+    <div style="width:95px;height:95px;border-radius:50%;background:#0a0e0a;display:flex;align-items:center;justify-content:center;flex-direction:column;animation:float 3s ease-in-out infinite;">
+      <span style="font-size:32px;animation:bounce 1.5s ease-in-out infinite;">📈</span>
+      <span style="font-size:9px;opacity:0.5;">PAKA KUMI</span>
+    </div>
+  </div>
+  <style>
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    @keyframes pulseRing {
+      0%, 100% { box-shadow:0 0 0 0 rgba(255,68,68,0.4); }
+      50% { box-shadow:0 0 0 18px rgba(255,68,68,0); }
+    }
+    @keyframes float {
+      0%, 100% { transform:translateY(0); }
+      50% { transform:translateY(-6px); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform:translateY(0); }
+      50% { transform:translateY(-4px); }
+    }
+    @keyframes fadeInDown {
+      from { opacity:0; transform:translateY(-10px); }
+      to { opacity:0.5; transform:translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity:0; transform:translateY(10px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+    @keyframes ctaPulse {
+      0%, 100% { box-shadow:0 0 0 0 rgba(255,68,68,0.4); }
+      50% { box-shadow:0 0 0 10px rgba(255,68,68,0); }
+    }
+    @keyframes multiplierRise {
+      0% { transform:scale(1); }
+      50% { transform:scale(1.1); }
+      100% { transform:scale(1); }
+    }
+  </style>
+  <div style="position:absolute;top:185px;left:0;right:0;text-align:center;animation:fadeInUp 0.6s 0.3s ease-out both;">
+    <span style="font-size:12px;opacity:0.6;">1% House Edge · Up to 3,000x Payout</span>
+  </div>
+  <div style="position:absolute;top:210px;left:0;right:0;display:flex;justify-content:center;gap:20px;">
+    <div style="text-align:center;animation:fadeInUp 0.5s 0.4s ease-out both;">
+      <div style="font-size:20px;color:#ff4444;animation:multiplierRise 2s ease-in-out infinite;">10 KSh</div>
+      <div style="font-size:8px;opacity:0.4;">Min Bet</div>
+    </div>
+    <div style="text-align:center;animation:fadeInUp 0.5s 0.5s ease-out both;">
+      <div style="font-size:20px;color:#ff8800;animation:multiplierRise 2s ease-in-out infinite 0.3s;">3,000x</div>
+      <div style="font-size:8px;opacity:0.4;">Max Win</div>
+    </div>
+    <div style="text-align:center;animation:fadeInUp 0.5s 0.6s ease-out both;">
+      <div style="font-size:20px;color:#ffcc00;animation:multiplierRise 2s ease-in-out infinite 0.6s;">1%</div>
+      <div style="font-size:8px;opacity:0.4;">House Edge</div>
+    </div>
+  </div>
+  <div style="position:absolute;top:270px;left:0;right:0;text-align:center;animation:fadeInUp 0.6s 0.7s ease-out both;">
+    <span style="font-size:11px;opacity:0.5;">Aviator · JetX · Spaceman · Comet Crash</span>
+  </div>
+  <div style="position:absolute;bottom:50px;left:0;right:0;text-align:center;animation:fadeInUp 0.6s 0.8s ease-out both;">
+    <button style="background:linear-gradient(135deg,#ff4444,#ff8800);color:#fff;border:none;border-radius:20px;padding:9px 30px;font-size:14px;font-weight:600;animation:ctaPulse 2s ease-in-out infinite;">Play Now</button>
+  </div>
+  <div style="position:absolute;bottom:14px;left:0;right:0;text-align:center;">
+    <span style="font-size:9px;opacity:0.4;">18+ Bet responsibly · BCLB License No. 0000438</span>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<div style="max-width:400px;margin:0 auto;border-radius:12px;overflow:hidden;background:#0a0e0a;position:relative;aspect-ratio:4/5;font-family:var(--font-sans);">
+  <h2 class="sr-only">Animated split-flap scoreboard ad for Betkumi showing flipping odds landing on a bet now call to action for EPL season</h2>
+
+  <div style="position:absolute;top:20px;left:0;right:0;text-align:center;">
+    <span style="color:#7fd97f;font-size:12px;letter-spacing:3px;">EPL · MATCHDAY 1</span>
+  </div>
+
+  <div style="position:absolute;top:60px;left:0;right:0;display:flex;justify-content:center;gap:6px;">
+    <div class="flap f1">2.10</div>
+    <div class="flap f2">X</div>
+    <div class="flap f3">3.40</div>
+  </div>
+
+  <div style="position:absolute;top:130px;left:0;right:0;text-align:center;">
+    <span style="color:#4a5a4a;font-size:11px;letter-spacing:2px;">HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DRAW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AWAY</span>
+  </div>
+
+  <div style="position:absolute;top:190px;left:0;right:0;text-align:center;">
+    <span style="color:#e8e8e0;font-size:30px;font-weight:500;letter-spacing:1px;">BETKUMI</span>
+  </div>
+
+  <div style="position:absolute;top:235px;left:0;right:0;text-align:center;">
+    <span style="color:#5a6a5a;font-size:13px;">Live odds. Every fixture. Fast payouts.</span>
+  </div>
+
+  <div style="position:absolute;bottom:56px;left:0;right:0;text-align:center;">
+    <span class="cta-flap">BET NOW</span>
+  </div>
+
+  <div style="position:absolute;bottom:18px;left:0;right:0;text-align:center;">
+    <span style="color:#3a453a;font-size:10px;">18+ Bet responsibly</span>
+  </div>
+</div>
+
+<style>
+.flap {
+  width:70px;height:52px;background:#141a14;border:1px solid #2a3a2a;border-radius:4px;
+  color:#7fd97f;font-size:22px;font-weight:500;display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);position:relative;overflow:hidden;
+}
+.flap::after {
+  content:"";position:absolute;top:50%;left:0;right:0;height:1px;background:#0a0e0a;
+}
+.f1 { animation: flip1 3.5s steps(1) infinite; }
+.f2 { animation: flip2 3.5s steps(1) infinite; }
+.f3 { animation: flip3 3.5s steps(1) infinite; }
+@keyframes flip1 {
+  0% { content: ""; }
+  0%, 20% { color:#3a4a3a; }
+  21%, 100% { color:#7fd97f; }
+}
+@keyframes flip2 { 0%, 35% { color:#3a4a3a; } 36%, 100% { color:#7fd97f; } }
+@keyframes flip3 { 0%, 50% { color:#3a4a3a; } 51%, 100% { color:#7fd97f; } }
+
+.cta-flap {
+  display:inline-block;background:#7fd97f;color:#0a0e0a;font-weight:500;font-size:14px;
+  padding:10px 28px;border-radius:4px;letter-spacing:1px;font-family:var(--font-mono);
+  animation: pulse 1.8s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(127,217,127,0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(127,217,127,0); }
+}
+</style>

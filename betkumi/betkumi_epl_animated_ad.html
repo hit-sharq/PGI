@@ -1,0 +1,48 @@
+<div style="max-width:400px;margin:0 auto;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#0b3d1f,#0f5c2c);position:relative;aspect-ratio:4/5;font-family:var(--font-sans);">
+  <h2 class="sr-only">Animated football-themed ad for Betkumi showing a ball rolling into a goal with EPL season messaging and a bet now call to action</h2>
+
+  <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(90deg, rgba(255,255,255,0.04) 0 40px, transparent 40px 80px);"></div>
+
+  <div style="position:absolute;top:16px;left:0;right:0;text-align:center;">
+    <span style="color:#fff;font-size:13px;letter-spacing:1px;opacity:0.85;">EPL SEASON RETURNS</span>
+  </div>
+
+  <div id="goal" style="position:absolute;top:70px;left:50%;transform:translateX(-50%);width:180px;height:110px;">
+    <div style="position:absolute;inset:0;border:4px solid #fff;border-bottom:none;"></div>
+    <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(0deg, rgba(255,255,255,0.35) 0 1px, transparent 1px 12px), repeating-linear-gradient(90deg, rgba(255,255,255,0.35) 0 1px, transparent 1px 12px);"></div>
+  </div>
+
+  <div id="ball" style="position:absolute;width:34px;height:34px;border-radius:50%;background:#fff;background-image:radial-gradient(circle at 30% 30%, transparent 6px, #111 6.5px 8px, transparent 8.5px), radial-gradient(circle at 70% 65%, transparent 6px, #111 6.5px 8px, transparent 8.5px);bottom:60px;left:20px;animation: kick 3.2s ease-in-out infinite;"></div>
+
+  <div id="flash" style="position:absolute;top:70px;left:50%;transform:translateX(-50%);width:180px;height:110px;background:#fff;opacity:0;border-radius:4px;animation: goalFlash 3.2s ease-in-out infinite;"></div>
+
+  <div style="position:absolute;bottom:100px;left:0;right:0;text-align:center;">
+    <span style="color:#fff;font-size:26px;font-weight:500;">Betkumi</span>
+  </div>
+
+  <div style="position:absolute;bottom:60px;left:0;right:0;text-align:center;">
+    <span style="color:#d8f5c8;font-size:14px;">Live odds. Every fixture. Fast payouts.</span>
+  </div>
+
+  <div style="position:absolute;bottom:20px;left:50%;transform:translateX(-50%);">
+    <button style="background:#fff;color:#0f5c2c;border:none;border-radius:20px;padding:8px 22px;font-size:14px;font-weight:500;">Bet now</button>
+  </div>
+</div>
+
+<style>
+@keyframes kick {
+  0% { left:20px; bottom:60px; }
+  45% { left:160px; bottom:170px; }
+  55% { left:170px; bottom:175px; }
+  70% { left:180px; bottom:150px; opacity:1; }
+  71% { opacity:0; }
+  99% { opacity:0; left:20px; bottom:60px; }
+  100% { opacity:1; left:20px; bottom:60px; }
+}
+@keyframes goalFlash {
+  0%, 65% { opacity:0; }
+  70% { opacity:0.5; }
+  80% { opacity:0; }
+  100% { opacity:0; }
+}
+</style>

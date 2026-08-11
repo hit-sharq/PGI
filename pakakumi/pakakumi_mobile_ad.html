@@ -1,0 +1,66 @@
+<div style="max-width:400px;margin:0 auto;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#0a1a0a 0%,#0d2d0d 50%,#0a1a0a 100%);position:relative;aspect-ratio:4/5;font-family:var(--font-sans);color:#fff;">
+  <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#00e676,#00bcd4,#76ff03);background-size:200% 100%;animation:shimmer 2s linear infinite;"></div>
+  <div style="position:absolute;top:14px;left:0;right:0;text-align:center;">
+    <span style="font-size:10px;letter-spacing:2px;opacity:0.5;text-transform:uppercase;animation:fadeInDown 0.6s ease-out both;">PLAY ANYWHERE</span>
+  </div>
+  <div style="position:absolute;top:42px;left:50%;transform:translateX(-50%);width:120px;height:200px;background:#111;border-radius:20px;border:3px solid #333;display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;animation:floatPhone 3s ease-in-out infinite;">
+    <div style="width:40px;height:40px;border-radius:50%;background:#222;border:2px solid #444;display:flex;align-items:center;justify-content:center;font-size:18px;animation:bounce 1.5s ease-in-out infinite;">📱</div>
+    <div style="margin-top:10px;font-size:8px;opacity:0.4;">Pakakumi</div>
+    <div style="position:absolute;bottom:8px;width:30px;height:3px;background:#333;border-radius:2px;"></div>
+  </div>
+  <style>
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    @keyframes fadeInDown {
+      from { opacity:0; transform:translateY(-10px); }
+      to { opacity:0.5; transform:translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity:0; transform:translateY(10px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+    @keyframes floatPhone {
+      0%, 100% { transform:translateX(-50%) translateY(0); }
+      50% { transform:translateX(-50%) translateY(-8px); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform:translateY(0); }
+      50% { transform:translateY(-4px); }
+    }
+  </style>
+  <div style="position:absolute;top:260px;left:0;right:0;text-align:center;animation:fadeInUp 0.6s 0.3s ease-out both;">
+    <span style="font-size:12px;opacity:0.7;">All crash games in your pocket</span>
+  </div>
+  <div style="position:absolute;top:285px;left:0;right:0;display:flex;justify-content:center;gap:24px;">
+    <div style="text-align:center;animation:fadeInUp 0.5s 0.4s ease-out both;">
+      <div style="font-size:18px;">⚡</div>
+      <div style="font-size:8px;opacity:0.4;">Fast Load</div>
+    </div>
+    <div style="text-align:center;animation:fadeInUp 0.5s 0.5s ease-out both;">
+      <div style="font-size:18px;">💾</div>
+      <div style="font-size:8px;opacity:0.4;">Lightweight</div>
+    </div>
+    <div style="text-align:center;animation:fadeInUp 0.5s 0.6s ease-out both;">
+      <div style="font-size:18px;">🔄</div>
+      <div style="font-size:8px;opacity:0.4;">Live Updates</div>
+    </div>
+  </div>
+  <div style="position:absolute;top:340px;left:0;right:0;text-align:center;animation:fadeInUp 0.6s 0.7s ease-out both;">
+    <span style="font-size:10px;opacity:0.4;">M-Pesa deposits work instantly in-app</span>
+  </div>
+  <div style="position:absolute;bottom:50px;left:0;right:0;text-align:center;animation:fadeInUp 0.6s 0.8s ease-out both;">
+    <button style="background:linear-gradient(135deg,#00e676,#00bcd4);color:#0a1a0a;border:none;border-radius:20px;padding:9px 30px;font-size:14px;font-weight:600;animation:ctaPulse 2s ease-in-out infinite;">Download App</button>
+  </div>
+  <div style="position:absolute;bottom:14px;left:0;right:0;text-align:center;">
+    <span style="font-size:9px;opacity:0.4;">18+ Bet responsibly · BCLB License No. 0000438</span>
+  </div>
+</div>
+
+<style>
+@keyframes ctaPulse {
+  0%, 100% { box-shadow:0 0 0 0 rgba(0,230,118,0.4); }
+  50% { box-shadow:0 0 0 10px rgba(0,230,118,0); }
+}
+</style>

@@ -1,0 +1,49 @@
+<div style="max-width:1200px;margin:0 auto;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#0d1b0d 0%,#1a3a1a 50%,#0d1b0d 100%);position:relative;aspect-ratio:2/1;font-family:var(--font-sans);color:#fff;">
+  <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#00e676,#76ff03,#00e676);background-size:200% 100%;animation:shimmer 2s linear infinite;"></div>
+  <div style="position:absolute;left:0;top:0;bottom:0;width:55%;padding:40px;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:12px;letter-spacing:3px;opacity:0.5;text-transform:uppercase;animation:fadeInDown 0.6s ease-out both;">Welcome Offer</div>
+    <div style="font-size:52px;font-weight:700;color:#00e676;text-shadow:0 2px 12px rgba(0,230,118,0.3);margin-top:4px;animation:fadeInDown 0.6s 0.1s ease-out both;">450% Bonus</div>
+    <div style="font-size:18px;font-weight:300;opacity:0.8;margin-top:4px;animation:fadeInDown 0.6s 0.2s ease-out both;">Up to KSh 100,000</div>
+    <div style="display:flex;gap:16px;margin-top:20px;animation:fadeInDown 0.6s 0.3s ease-out both;">
+      <div style="background:rgba(0,230,118,0.15);border-radius:8px;padding:8px 14px;text-align:center;">
+        <div style="font-size:18px;font-weight:700;color:#00e676;">450%</div>
+        <div style="font-size:8px;opacity:0.5;">Match</div>
+      </div>
+      <div style="background:rgba(0,230,118,0.15);border-radius:8px;padding:8px 14px;text-align:center;">
+        <div style="font-size:18px;font-weight:700;color:#00e676;">KSh 100K</div>
+        <div style="font-size:8px;opacity:0.5;">Max Bonus</div>
+      </div>
+      <div style="background:rgba(0,230,118,0.15);border-radius:8px;padding:8px 14px;text-align:center;">
+        <div style="font-size:18px;font-weight:700;color:#00e676;">30%</div>
+        <div style="font-size:8px;opacity:0.5;">Cashback</div>
+      </div>
+    </div>
+    <button style="background:linear-gradient(135deg,#00e676,#76ff03);color:#0d1b0d;border:none;border-radius:24px;padding:12px 40px;font-size:16px;font-weight:600;margin-top:24px;align-self:flex-start;animation:fadeInDown 0.6s 0.4s ease-out both;cursor:pointer;">Claim Now</button>
+  </div>
+  <div style="position:absolute;right:0;top:0;bottom:0;width:45%;display:flex;align-items:center;justify-content:center;">
+    <div style="position:relative;animation:float 3s ease-in-out infinite;">
+      <div style="font-size:80px;animation:bounce 1.5s ease-in-out infinite;">💰</div>
+      <div style="position:absolute;top:-10px;right:-10px;font-size:36px;animation:bounce 1.5s ease-in-out infinite 0.3s;">📈</div>
+    </div>
+  </div>
+  <div style="position:absolute;bottom:12px;right:20px;font-size:9px;opacity:0.3;">18+ Bet responsibly · BCLB License No. 0000438</div>
+</div>
+
+<style>
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes fadeInDown {
+  from { opacity:0; transform:translateY(-10px); }
+  to { opacity:1; transform:translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform:translateY(0); }
+  50% { transform:translateY(-8px); }
+}
+@keyframes bounce {
+  0%, 100% { transform:translateY(0); }
+  50% { transform:translateY(-6px); }
+}
+</style>
